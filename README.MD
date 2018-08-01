@@ -30,4 +30,4 @@ To set up a list of any locations you want, simply format the list as an array o
 * Create a form in your HTML document to capture user data
 * Edit the element IDs in createSearchableMap.js to reflect the fields in your form
 * Save your desired list of locations, formatted as an Array of objects, as allLocations.js
-* Get your own Google Maps API key, and go! Please don't use mine :-) They are free and unlimited
+* Get your own Google Maps API key, insert, and go!  They are free and unlimited (up to 40,000 calls per month for Geocoding)
