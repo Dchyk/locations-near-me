@@ -1,6 +1,6 @@
 # Locations Near Me #
 
-![picture alt](http://www.http://alexdzwonchyk.com/maps-demo/screenshot.png)
+![picture alt](http://www.alexdzwonchyk.com/maps-demo/screenshot.png)
 
 This is a demo of a simple client-side application that leverages the Google Maps JavaScript API to 
 give a user the ability to search for locations of a given business within a specified radius. 
