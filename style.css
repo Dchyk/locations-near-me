@@ -1,0 +1,155 @@
+@import 'reset.css';
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3f3f3f;
+}
+
+p {
+	font-size: 16px;
+}
+
+body {
+  background-image: url('logo.png');
+  background-repeat: repeat;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 2px #d3d3d3;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+h1 {
+  background-color: #451400;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 90%;
+}
+
+h1 img {
+  max-height: 60px;
+  margin-right: 1rem;
+  vertical-align: text-bottom;
+}
+
+p.disclaimer {
+	font-size: .8rem;
+	font-style: italic;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 90%;
+	text-align: center;
+}
+
+#locations-near-you-map {
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+input {
+	color: #000;
+	height: 1.8rem;
+	font-size: .9rem;
+	margin: 0 5px;
+	padding: 3px;
+}
+
+input[type=number] {
+  width: 60px;
+}
+
+input[type=text]  {
+  width: 300px;
+}
+
+button {
+	background-color: #a81612;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	padding: .5rem 1rem;
+	transition: background-color 0.2s;
+}
+
+button:hover {
+	background-color: #d6322d;
+}
+
+button:active {
+	background-color: #000;
+	color: #fff;
+}
+
+#location-search-alert {
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+
+.infoWindow h3,
+.location-near-you-box h4 {
+  color: #a81612;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.infoWindow h3 {
+	font-size: 1.2rem;
+}
+
+.infoWindow p {
+	font-size: .8rem;
+}
+
+#locations-near-you {
+  text-align: center;
+}
+
+.location-near-you-box {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px; 
+  border: 1px dotted #000;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.location-near-you-box p {
+  font-size: .75rem;
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 img {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  input[type=number], input[type=text], label {
+    display: block;
+    margin: 10px auto;
+  }
+
+  input[type=text] {
+    max-width: 90%;
+  }
+}

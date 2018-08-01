@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Locations Near Me | Google Maps JavaScript API Demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="allLocations.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1><img src="Chipotle-Logo.png" />Location Finder</h1>
+      <p class="disclaimer">Represents a subset of Chipotle locations, presented for demonstration purposes only.<br> There is a cluster of locations in MD, DC, and VA for testing smaller radius numbers.</p>
+
+      <form action="#" method="post">
+        <label for="maxRadius">Find locations within
+          <input name="maxRadius" id="maxRadius" type="number" value="5" min="1" />
+        </label>
+        <label for="userAddress"> miles of
+          <input name="userAddress" id="userAddress" type="text" placeholder="Your Address" value="333 W Camden St, Baltimore MD"/>
+        </label>
+        <button id="submitLocationSearch">Search</button>
+      </form>
+
+      <h2 id="location-search-alert">All Locations</h2>
+
+      <div id="locations-near-you-map"></div>
+
+      <div id="locations-near-you"></div>
+
+      <script defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyDwYnLZk-xYFimhU05Tq92l7ocIowVI4iw&callback=createSearchableMap"></script>
+      <script src="createSearchableMap.js"></script>
+    </div>
+  </body>
+</html> 
