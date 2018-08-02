@@ -153,3 +153,11 @@ button:active {
     max-width: 90%;
   }
 }
+
+@media all and (max-width: 480px) {
+  .location-near-you-box {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
