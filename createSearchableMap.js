@@ -20,7 +20,7 @@ function createSearchableMap(locations = allLocations) {
   var infoWindow = new google.maps.InfoWindow(), marker, i;
   
   // Place the markers on the map
-  for( i = 0; i < markers.length; i++ ) {
+  for (i = 0; i < markers.length; i++) {
     var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
     bounds.extend(position);
     marker = new google.maps.Marker({
@@ -39,13 +39,13 @@ function createSearchableMap(locations = allLocations) {
     })(marker, i));
 
     // Only use the bounds to zoom the map if there is more than 1 location shown
-		if (locations.length > 1) {
-			map.fitBounds(bounds);
-		} else {
-			var center = new google.maps.LatLng(locations[0].lat, locations[0].lng);
-			map.setCenter(center);
-			map.setZoom(15);
-		}
+    if (locations.length > 1) {
+      map.fitBounds(bounds);
+    } else {
+      var center = new google.maps.LatLng(locations[0].lat, locations[0].lng);
+      map.setCenter(center);
+      map.setZoom(15);
+    }
   }
 }
 
