@@ -1,11 +1,10 @@
 function createSearchableMap(locations = allLocations) {
-  var map;
   var bounds = new google.maps.LatLngBounds();
   var mapOptions = {mapTypeId: 'roadmap'};
   var markers = [];
   var infoWindowContent = [];
-  
   var map = new google.maps.Map(document.getElementById('locations-near-you-map'), mapOptions);
+  
   map.setTilt(45);
   
   locations.forEach(function(location) {
